@@ -1,4 +1,4 @@
-# Задание по вёрстке (500na700)
+# Задание по вёрстке (Astrum)
 
 ## Содержимое
 
@@ -13,10 +13,6 @@
 ### Скриншот
 
 ![](./screenshot.png)
-
-### Ссылки
-
-- Хостинг: [https://lustrous-halva-48657a.netlify.app/](https://lustrous-halva-48657a.netlify.app/)
 
 ## Что и как?
 
