@@ -1,0 +1,144 @@
+@use "../util/functions" as u;
+
+.bottom-part {
+  background-image: url("./assets/background2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: u.rem(58) 12% u.rem(24) 12%;
+  display: flex;
+  justify-content: space-between;
+
+  &__dog-container {
+    position: relative;
+    height: 891px;
+    width: 680px;
+  }
+
+  &__dog {
+    width: 441px;
+    height: 891px;
+    position: absolute;
+    left: 134px;
+    top: 0;
+    z-index: 999;
+  }
+
+  &__circle {
+    border-radius: 686px;
+    border: 1px solid var(--black);
+    opacity: 0.2;
+    background: var(--blue);
+    mix-blend-mode: lighten;
+    filter: blur(100px);
+
+    width: 680px;
+    height: 686px;
+    position: absolute;
+    left: 0;
+    top: 182px;
+  }
+
+  &__table-container {
+    h2 {
+      color: var(--blue);
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: u.rem(30);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: u.rem(39);
+    }
+
+    table {
+      font-family: "Roboto", sans-serif;
+
+      border-spacing: u.rem(11) u.rem(1);
+
+      margin-bottom: u.rem(25);
+
+      thead {
+        &::after {
+          height: u.rem(9);
+          display: table-row;
+          content: "";
+        }
+        th:nth-of-type(2),
+        th:nth-of-type(3) {
+          padding: u.rem(4) u.rem(10);
+          color: var(--red);
+          text-align: center;
+
+          font-size: u.rem(12);
+          font-weight: 400;
+          border: 1px solid var(--bd-red);
+        }
+      }
+
+      tbody {
+        tr {
+          color: var(--white);
+          font-size: 1rem;
+          font-weight: 400;
+          outline: 1px solid var(--bd-red);
+        }
+
+        td {
+          padding: u.rem(5) u.rem(6) u.rem(4) u.rem(6);
+
+          &:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+          }
+
+          &:nth-last-of-type(1),
+          &:nth-last-of-type(2) {
+            text-align: center;
+          }
+
+          img {
+            width: 64px;
+            height: 64px;
+            margin-right: u.rem(20);
+          }
+        }
+      }
+    }
+  }
+
+  &__dog-box {
+    display: flex;
+    position: relative;
+    img {
+      width: 402px;
+      height: 323px;
+    }
+
+    > div {
+      position: absolute;
+      left: 263px;
+      top: 156px;
+      font-family: "Roboto", sans-serif;
+      div {
+        color: var(--white);
+        
+        font-size: u.rem(50);
+        font-weight: 400;
+      }
+
+      button {
+        background-color: var(--yellow);
+        border-radius: u.rem(7);
+        padding: u.rem(12) u.rem(15);
+        color: var(--black);
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        width: 180px; 
+        box-sizing: border-box;
+        position: absolute;
+        top: 70px;
+      }
+    }
+  }
+}
